@@ -1,0 +1,23 @@
+{
+  "name": "druid-automator",
+  "version": "1.0.0",
+  "description": "UIAutomator2 based module for automating android ui interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w0jak-r00t/druid-automator.git"
+  },
+  "author": "w0jak-r00t",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w0jak-r00t/druid-automator/issues"
+  },
+  "homepage": "https://github.com/w0jak-r00t/druid-automator#readme",
+  "dependencies": {
+    "uiautomator-server": "^2.8.0",
+    "xpath-html": "^1.0.2"
+  }
+}
