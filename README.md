@@ -1,5 +1,10 @@
 # druid-automator
 
+## Install
+```bash
+npm install --save https://github.com/w0jak-r00t/druid-automator
+```
+
 ## Usage
 
 ```javascript
