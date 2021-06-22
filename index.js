@@ -22,7 +22,7 @@ module.exports = class DruidAutomator extends UIAutomator {
   }
 
   async findElement(expression) {
-    let xml = await super.dump(true);
+    let xml = await super.dump(false);
     let element = xpath.fromPageSource(xml).findElement(expression);
     let coords = this.getCoordsOfElement(element);
     element.click = () => { return this.click(coords) };
@@ -31,7 +31,7 @@ module.exports = class DruidAutomator extends UIAutomator {
   }
 
   async findElements(expression) {
-    let xml = await super.dump(true);
+    let xml = await super.dump(false);
     let elements = xpath.fromPageSource(xml).findElements(expression);
     let newElements = [];
     for (let element of elements) {
@@ -48,7 +48,7 @@ module.exports = class DruidAutomator extends UIAutomator {
     let iterations = timeout ? Math.round(timeout/500) : 99999;
     for (let i = 0; i <= iterations; i++) {
       try {
-        let xml = await super.dump(true);
+        let xml = await super.dump(false);
         element = xpath.fromPageSource(xml).findElement(expression);
         let coords = this.getCoordsOfElement(element);
         element.click = () => { return this.click(coords) };
