@@ -74,4 +74,8 @@ module.exports = class DruidAutomator extends UIAutomator {
     }
   }
 
+  async sleep(ms) {
+    await sleep(ms);
+  }
+
 }
